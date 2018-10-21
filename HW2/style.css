@@ -1,0 +1,19 @@
+fieldset{
+    width: 400px;
+}
+.right{
+    text-align:right;
+}
+label{
+    float:left;
+}
+.width-input{
+    width: 100px;
+}
+input{
+    width: 180px;
+}
+table{
+    text-align: center;
+    white-space: pre-wrap;
+}
