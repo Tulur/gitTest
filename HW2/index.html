@@ -5,141 +5,155 @@
     <title>Form&Tables</title>
     <link rel="stylesheet" href="style.css">
 </head>
-        <h1>Редактирование профиля</h1>
-        <form>
-            <fieldset>
-                <legend>Общая информация</legend>
-                <div class="right">
-                    <p><label>ID</label><input type="text" value="725" readonly></p>
-                    <p><label>Имя</label><input type="text"></p>
-                    <p><label>Фамилия</label><input type="text"></p>
-                    <p><label>Пароль</label><input type="password"></p>
-                    <p><label>Телефон</label><input type="text" placeholder="380"></p>
-                    <p>
-                        <label>E-mail</label><input type="email" placeholder="mymail@gmail.com">
-                        <p><input type="checkbox">Сделать мой e-mail приватным</p>
-                    </p>
-                    <p><label>Телефон </label><input type="date"></p>
-                    <p><label>URL блога</label><input type="url" placeholder="http://"></p>
-                    <p><label>Про меня</label><textarea></textarea></p>
-                    <p><label>Фото профиля</label><input type="file"></p>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Профессиональные навыки</legend>
-                <div class="right">
-                    <p><label>Желание учиться</label><input type="range"></p>
-                    <p><label>Как оцениваете опыт</label><input type="number" min="1" max="10" placeholder="От 1 до 10"></p>
-                    <p>
-                        <label>Опыт в разработке</label>
-                        <p><input type="radio">Junior</p>
-                        <p><input type="radio">Midle</p>
-                        <p><input type="radio">Senior</p>
-                    </p>
-                    <p><label>Страна</label>
-                        <select>
-                            <option>Украина</option>
-                            <option>Польша</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label>Знания</label>
-                        <p><input type="checkbox">HTML</p>
-                        <p><input type="checkbox">CSS</p>
-                        <p><input type="checkbox">JavaScript</p>
-                        <p><input type="checkbox">C++</p>
-                        <p><input type="checkbox">C#</p>
-                    </p>
-                </div>
-                </fieldset>
-                <input type="reset" value="Отмена"><input type="submit" value="Отправить">
-        </form>
+    <h1>Profile edit page</h1>
+    <form>
+        <fieldset>
+            <legend>Basic info</legend>
+            <ul>
+                <li><label>ID</label><input type="text" name="id" value="725" readonly></li>
+                <li><label>Firs Name</label><input type="text" name="name" required></li>
+                <li><label>Last name</label><input type="text" name="surname" required></li>
+                <li><label>Password</label><input type="password" name="password" required></li>
+                <li><label>Phone</label><input type="text" placeholder="380" name="phone" required></li>
+                <li><label>Email</label><input type="email" placeholder="mymail@gmail.com" name="email" required></li>
+                    <ul>
+                        <li><input type="checkbox" name="checkbox">Keep my email address private</li>
+                    </ul>
+                <li><label>DOB </label><input type="data" name="data" required></li>
+                <li><label>Blog url</label><input type="url" name="url" placeholder="http://"></li>
+                <li><label>About me</label><textarea name="comment"></textarea></li>
+                <li><label>Profile picture</label><input type="file" name="file"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Professional info</legend>
+            <ul>
+                <li><label>Desire to study</label><input type="range" name="range" required></li>
+                <li><label>Experience</label><input type="number" name="number" min="1" max="10" placeholder="От 1 до 10" required></li>
+                <li><label>Development Experience</label></li>
+                    <ul>
+                        <li><input type="radio" name="radio">Junior</li>
+                        <li><input type="radio" name="radio">Midle</li>
+                        <li><input type="radio" name="radio">Senior</li>
+                    </ul>
+                </li>
+                <li><label>Country</label>
+                    <select id="country" name="country" required>
+                        <option disabled selected>--Please choose your country--</option>
+                        <option value="UA">Ukraine</option>
+                        <option disabled>------------------------</option>
+                        <option value="PL">Poland</option>
+                        <option value="US">USA</option>
+                        <option value="UK">United Kingdom</option>
+                    </select>
+                </li>
+                <li><label>Skills</label>
+                    <ul>
+                        <li><input type="checkbox" name="checkbox">HTML</li>
+                        <li><input type="checkbox" name="checkbox">CSS</li>
+                        <li><input type="checkbox" name="checkbox">JavaScript</li>
+                        <li><input type="checkbox" name="checkbox">C++</li>
+                        <li><input type="checkbox" name="checkbox">C#</li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <ul>
+            <li><input type="reset" name="cancel" value="Отмена">
+                <input type="submit" name="submit" value="Отправить"></li>
+        </ul>
+    </form>
 
     <table border="1" cellspacing="0">
-        <tr>
-            <th rowspan="2"></th>
-            <th >I-A</th>
-            <th>І-Б</th>
-            <th colspan="2">І-В</th>
-            <th>І-І</th>
-            <th>ІІ-А</th>
-            <th>АА-Б</th>
-            <th colspan="2">ІІ-В</th>
-            <th colspan="2">ІІІ-А</th>
-            <th colspan="2">ІІІ-В</th>
-            <th>ІІІ-І</th>
-            <th rowspan="2"></th>
-        </tr>
-        <tr>
-            <td colspan="2">підгрупа І</td>
-            <td>підгрупа І</td>
-            <td>підгрупа ІІ</td>
-            <td>підгрупа ІІ</td>
-            <td colspan="2">підгрупа І</td>
-            <td>підгрупа І</td>
-            <td>підгрупа ІІ</td>
-            <td>підгрупа І</td>
-            <td>підгрупа ІІ</td>
-            <td>підгрупа І</td>
-            <td>підгрупа ІІ</td>
-            <td>підгрупа ІІ</td>
-        </tr>
-        <tr>
-            <th>1</th>
-            <td colspan="5">Фізичне виховання</td>
-            <td colspan="2">Вища математика для фізиків доц. Корнієнко С.В.ауд. 258</td>
-            <td colspan="2">Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279</td>
-            <td colspan="2">Ділова іноземна мова ст.викл. Зінченко А.В. ауд. 267</td>
-            <td colspan="3">Теорія ймовірностей та випадкові процеси доц. Ральченко С.А. ауд. 136</td>
-            <th>1</th>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
-            <td></td>
-            <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
-            <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
-            <td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
-            <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
-            <td></td>
-            <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
-            <td></td>
-            <td></td>
-            <td>Вища математика доц. Босовський М.В. ауд. 243</td>
-            <th>2</th>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
-            <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
-            <td></td>
-            <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
-            <td colspan="2">Педагогіка доц. Лещенко І.Т. aуд. 258</td>
-            <td></td>
-            <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
-            <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
-            <td></td>
-            <td></td>
-            <td>Вища математика доц. Босовський М.В. ауд. 243</td>
-            <th>3</th>
-        </tr>
-        <tr>
-            <th>4</th>
-            <td colspan="2"></td>
-            <td colspan="2">Фізика ст.викл. Власенко В.М. ауд. 279</td>
-            <td></td>
-            <td colspan="2"></td>
-            <td></td>
-            <td></td>
-            <td colspan="2"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <th>4</th>
-        </tr>
-        <tr>
-            <td colspan="16">Заступник директора з навчально-методичної роботи, ст. викладач - В. М. Власенко</td>
-        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th>I-A</th>
+                <th>І-Б</th>
+                <th colspan="2">І-В</th>
+                <th>І-І</th>
+                <th>ІІ-А</th>
+                <th>АА-Б</th>
+                <th colspan="2">ІІ-В</th>
+                <th colspan="2">ІІІ-А</th>
+                <th colspan="2">ІІІ-В</th>
+                <th>ІІІ-І</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <td colspan="2">підгрупа І</td>
+                <td>підгрупа І</td>
+                <td>підгрупа ІІ</td>
+                <td>підгрупа ІІ</td>
+                <td colspan="2">підгрупа І</td>
+                <td>підгрупа І</td>
+                <td>підгрупа ІІ</td>
+                <td>підгрупа І</td>
+                <td>підгрупа ІІ</td>
+                <td>підгрупа І</td>
+                <td>підгрупа ІІ</td>
+                <td>підгрупа ІІ</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td colspan="5">Фізичне виховання</td>
+                <td colspan="2">Вища математика для фізиків доц. Корнієнко С.В.ауд. 258</td>
+                <td colspan="2">Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279</td>
+                <td colspan="2">Ділова іноземна мова ст.викл. Зінченко А.В. ауд. 267</td>
+                <td colspan="3">Теорія ймовірностей та випадкові процеси доц. Ральченко С.А. ауд. 136</td>
+                <th>1</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
+                <td></td>
+                <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+                <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+                <td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
+                <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+                <td></td>
+                <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
+                <td></td>
+                <td></td>
+                <td>Вища математика доц. Босовський М.В. ауд. 243</td>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
+                <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+                <td></td>
+                <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+                <td colspan="2">Педагогіка доц. Лещенко І.Т. aуд. 258</td>
+                <td></td>
+                <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+                <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
+                <td></td>
+                <td></td>
+                <td>Вища математика доц. Босовський М.В. ауд. 243</td>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td colspan="2"></td>
+                <td colspan="2">Фізика ст.викл. Власенко В.М. ауд. 279</td>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>4</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="16">Заступник директора з навчально-методичної роботи, ст. викладач - В. М. Власенко</td>
+            </tr>
+        </tfoot>>
     </table>
 </html>

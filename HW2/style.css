@@ -1,19 +1,13 @@
 fieldset{
-    width: 400px;
+    width: 360px;
 }
-.right{
-    text-align:right;
-}
-label{
-    float:left;
-}
-.width-input{
-    width: 100px;
-}
-input{
-    width: 180px;
+li {
+    padding-top: 10px;
+    list-style-type: none;
 }
 table{
-    text-align: center;
     white-space: pre-wrap;
+}
+td{
+    text-align: center;
 }
