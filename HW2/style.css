@@ -1,0 +1,13 @@
+fieldset{
+    width: 360px;
+}
+li {
+    padding-top: 10px;
+    list-style-type: none;
+}
+table{
+    white-space: pre-wrap;
+}
+td{
+    text-align: center;
+}
