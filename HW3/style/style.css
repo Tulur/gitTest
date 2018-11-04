@@ -1,0 +1,74 @@
+header{
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+  overflow: hidden;
+  height: 76px;
+}
+.header_logo{
+  margin: 3px 50px 3px 3px;
+  float: left;
+  width: 189px;
+  height: 70px;
+}
+.change_language{
+  float: right;
+  margin: 29px 5px;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  float: left;
+}
+nav a{
+  color: #ffffff;
+  padding: 32px 11px;
+  display: inline-block;
+}
+nav a:hover{
+  background: #ffffff;
+  color: #2a2a2a;
+}
+.slider{
+  z-index: 0;
+}
+.control_buttons{
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  top: -140px;
+  z-index: 1;
+}
+.slider_control_button{
+  margin-left: 3px;
+  margin-right: 3px;
+  line-height: 36px;
+  background: #505050;
+  width: 36px;
+  border-radius: 5px;
+}
+.date_selection_button{
+  margin: 0 1px 0 1px;
+  width: 92px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #4F4F4F;
+  background:
+      radial-gradient(circle at top left, transparent 15px, #4F4F4F 0) top left,
+      radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
+      radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
+      radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}

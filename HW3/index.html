@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>HW3</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <header>
@@ -28,16 +29,51 @@
                 </div>
             </div>
         </header>
-        <div name="slider"><img src="img/picture_slider.png"></div>
-        <aside>
-            Левый сайдбар
-        </aside>
-        <main>
-            Основной
-        </main>
-        <aside>
-            Правый сайдбар
-        </aside>
+        <div name="slider" class="slider">
+            <img src="img/picture_slider.png">
+            <div class="control_buttons">
+                <div class="slider_control_button"><img href="img/move_left.png"></div>
+                <div class="date_selection_button">
+                    <p>Неділя</p>
+                    <p>21</p>
+                    <p>Лютий</p>
+                </div>
+                <div class="date_selection_button">
+                    <p>Понеділок</p>
+                    <p>22</p>
+                    <p>Лютий</p>
+                </div>
+                <div class="date_selection_button">
+                    <p>Вівторок</p>
+                    <p>23</p>
+                    <p>Лютий</p>
+                </div>
+                <div>
+                </div>
+                <div class="date_selection_button">
+                    <p>Четверг</p>
+                    <p>25</p>
+                    <p>Лютий</p>
+                </div>
+                <div class="date_selection_button">
+                    <p>П'ятниця</p>
+                    <p>26</p>
+                    <p>Лютий</p>
+                </div>
+                <div class="slider_control_button"><img href="img/move_right.png"></div>
+            </div>
+        </div>
+        <section>
+            <aside>
+                Левый сайдбар
+            </aside>
+            <main>
+                Основной
+            </main>
+            <aside>
+                Правый сайдбар
+            </aside>
+        </section>
         <footer>
             Подвал
         </footer>
