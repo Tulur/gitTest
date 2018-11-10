@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>HW3</title>
-        <link rel="stylesheet" href="style/reset.css">
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
-        <header class="col_head">
-            <div>
-                <h1 class="header_logo"><a href="#"><img src="img/logo.png" class="heed_logo"></a></h1>
-                <nav class="nav_head">
-                    <a href="#" class="nav_head_a">Головна</a>
-                    <a href="#" class="nav_head_a">Афіша</a>
-                    <a href="#" class="nav_head_a">Репертуар</a>
-                    <a href="#" class="nav_head_a">Новини</a>
-                    <a href="#" class="nav_head_a">Про театр</a>
-                    <a href="#" class="nav_head_a">Персоналії</a>
-                    <a href="#" class="nav_head_a">Контакти</a>
-                    <a href="#" class="nav_head_a">Фестивалі</a>
-                </nav>
-                <div class="change_language">
-                    <select name="language">
-                        <option value="UA">UA</option>
-                        <option value="RU">RU</option>
-                        <option value="UK">UK</option>
-                    </select>
-                </div>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>HW3</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header class="col_head">
+    <div>
+        <h1 class="header_logo"><a href="#"><img src="img/logo.png" class="heed_logo"></a></h1>
+        <nav class="nav_head">
+            <a href="#" class="nav_head_a">Головна</a>
+            <a href="#" class="nav_head_a">Афіша</a>
+            <a href="#" class="nav_head_a">Репертуар</a>
+            <a href="#" class="nav_head_a">Новини</a>
+            <a href="#" class="nav_head_a">Про театр</a>
+            <a href="#" class="nav_head_a">Персоналії</a>
+            <a href="#" class="nav_head_a">Контакти</a>
+            <a href="#" class="nav_head_a">Фестивалі</a>
+        </nav>
+        <div class="change_language">
+            <select name="language">
+                <option value="UA">UA</option>
+                <option value="RU">RU</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+    </div>
+</header>
+<div>
+    <img src="img/picture_slider.png" alt="Фото вистави" width="100%">
+    <div class="slider">
         <div>
-            <img src="img/picture_slider.png" alt="Фото вистави" width="100%">
-            <div class="slider">
+            <button class="move_left">left</button>
+        </div>
+        <div class="button_slider">
+            <p class="day_of_week">Нд</p>
+            <p class="date">21</p>
+            <p class="month">лютого</p>
+        </div>
+        <div class="button_slider">
+            <p class="day_of_week">Пн</p>
+            <p class="date">22</p>
+            <p class="month">лютого</p>
+        </div>
+        <div class="button_slider_active">
+            <div class="button_slider_active_info">
+                <p class="day_of_week">Пн</p>
+                <p class="date">22</p>
+                <p class="month">лютого</p>
+            </div>
+            <div class="slider_info">
                 <div>
-                    <button class="move_left">left</button>
-                </div>
-                <div class="button_slider">
-                    <p class="day_of_week">Нд</p>
-                    <p class="date">21</p>
-                    <p class="month">лютого</p>
-                </div>
-                <div class="button_slider">
-                    <p class="day_of_week">Пн</p>
-                    <p class="date">22</p>
-                    <p class="month">лютого</p>
-                </div>
-                <div class="button_slider_active">
-                    <div class="button_slider_active_info">
-                        <p class="day_of_week">Пн</p>
-                        <p class="date">22</p>
-                        <p class="month">лютого</p>
-                    </div>
-                    <div class="slider_info">
-                        <div>
-                            <p class="title">Сад гетсиманський</p>
-                            <p class="description">Народна трагедія на 2 дії</p>
-                            <p class="description">Тривалість вистави 2 год 20 хв.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="button_slider">
-                    <p class="day_of_week">Чт</p>
-                    <p class="date">25</p>
-                    <p class="month">лютого</p>
-                </div>
-                <div class="button_slider">
-                    <p class="day_of_week">Пт</p>
-                    <p class="date">26</p>
-                    <p class="month">лютого</p>
-                </div>
-                <div>
-                    <button class="move_right">right</button>
+                    <p class="title">Сад гетсиманський</p>
+                    <p class="description">Народна трагедія на 2 дії</p>
+                    <p class="description">Тривалість вистави 2 год 20 хв.</p>
                 </div>
             </div>
         </div>
-        <section class="container">
-            <aside>
-                Левый сайдбар
-            </aside>
-            <main>
-                Основной
-            </main>
-            <aside>
-                Правый сайдбар
-            </aside>
-        </section>
-        <footer>
-            Подвал
-        </footer>
-    </body>
+        <div class="button_slider">
+            <p class="day_of_week">Чт</p>
+            <p class="date">25</p>
+            <p class="month">лютого</p>
+        </div>
+        <div class="button_slider">
+            <p class="day_of_week">Пт</p>
+            <p class="date">26</p>
+            <p class="month">лютого</p>
+        </div>
+        <div>
+            <button class="move_right">right</button>
+        </div>
+    </div>
+</div>
+<section class="container">
+    <aside class="left_sidebar">
+        <nav class="nav_sidebar">
+            <a href="#">
+                <p><img src="img/icon1.png" alt="фотоархів">ФОТОАРХІВ</p>
+            </a>
+            <a href="#">
+                <p><img src="img/icon2.png" alt="відеоархів">ВІДЕОАРХІВ</p>
+            </a>
+            <a href="#">
+                <p><img src="img/icon3.png" alt="піклівальна рада">ПІКЛУВАЛЬНА РАДА</p>
+            </a>
+            <a href="#">
+                <p><img src="img/icon3.png" alt="партнери">ПАРТНЕРИ</p>
+            </a>
+            <a href="#">
+                <p><img src="img/icon5.png" alt="форум">ФОРУМ</p>
+            </a>
+        </nav>
+    </aside>
+    <main>
+
+    </main>
+    <aside>
+        Правый сайдбар
+    </aside>
+</section>
+<footer>
+    Подвал
+</footer>
+</body>
 </html>
