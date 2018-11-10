@@ -100,6 +100,7 @@ body {
 
 .title {
   font-size: 27.5px;
+  margin-bottom: 17px;
 }
 
 .description {
@@ -179,6 +180,7 @@ body {
   width: 482px;
   height: 360px;
   margin-top: 33px;
+  margin-right: 31px;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 5px 5px;
 }
@@ -192,12 +194,15 @@ body {
   white-space: pre-wrap;
   margin-left: 14px;
   font-size: 14px;
-  height: 42px;
+  margin-right: 14px;
+  max-height: 49px;
   overflow: hidden;
+  -webkit-column-width: 49px;
+  column-width: 482px;
 }
 
 .main_block div {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,4 +215,29 @@ body {
 .main_block a {
   text-decoration: none;
   color: #878c8d;
+}
+
+.right_sidebar {
+  margin-left: 21px;
+}
+
+.right_sidebar a {
+  text-decoration: none;
+}
+
+.content_right_bar {
+  margin-top: 27px;
+  margin-bottom: 40px;
+  width: 233px;
+  height: 213px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  -webkit-column-width: 32px;
+  column-width: 213px;
+  color: #484c4d;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.content_right_bar p {
+  padding: 12px 16px 11px 14px;
 }
