@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <h1>Profile edit page</h1>
-    <form>
+    <form action="https://postman-echo.com/post" method="post">
         <fieldset>
             <legend>Basic info</legend>
             <ul>
@@ -19,7 +19,7 @@
                     <ul>
                         <li><input type="checkbox" name="checkbox">Keep my email address private</li>
                     </ul>
-                <li><label>DOB </label><input type="data" name="data" required></li>
+                <li><label>DOB </label><input type="date" name="date" required></li>
                 <li><label>Blog url</label><input type="url" name="url" placeholder="http://"></li>
                 <li><label>About me</label><textarea name="comment"></textarea></li>
                 <li><label>Profile picture</label><input type="file" name="file"></li>
